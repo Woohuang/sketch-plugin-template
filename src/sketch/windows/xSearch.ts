@@ -12,8 +12,8 @@ const win = () => {
     browserWindow = new BrowserWindow({
       alwaysOnTop: true,
       identifier: winIdentifier.XSearch,
-      width: 465,
-      height: 332,
+      width: 390,
+      height: 300,
       center: true,
       hidesOnDeactivate: true,
       frame: false,
