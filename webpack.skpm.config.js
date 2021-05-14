@@ -1,7 +1,8 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require("webpack");
+const path = require("path");
 
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
+// const GenerateJsonPlugin = require('generate-json-webpack-plugin');
 
 /**
  * Function that mutates original webpack config.
@@ -10,14 +11,14 @@ const TerserPlugin = require('terser-webpack-plugin');
  * @param {object} config - original webpack config.
  * @param {boolean} isPluginCommand - whether the config is for a plugin command or an asset
  **/
-module.exports = function (config) {
-  const isDev = process.env.NODE_ENV === 'development';
+module.exports = function (config, isPluginCommand) {
+  const isDev = process.env.NODE_ENV === "development";
 
   // 修改 skpm 复制到 build 目录的方法
   config.module.rules[1].use.query = {
     raw: true,
     outputPath(url) {
-      return path.posix.join('..', 'Resources', url);
+      return path.posix.join("..", "Resources", url);
     },
     publicPath(url) {
       return `"file://" + String(context.scriptPath).split(".sketchplugin/Contents/Sketch")[0] + ".sketchplugin/Contents/Resources/${url}"`;
@@ -29,11 +30,11 @@ module.exports = function (config) {
     exclude: [/node_modules/],
     use: [
       {
-        loader: 'ts-loader',
+        loader: "ts-loader",
         options: {
           transpileOnly: isDev,
-          configFile: path.resolve(process.cwd(), 'tsconfig.json'),
-          reportFiles: ['src/sketch/**/*.ts'],
+          configFile: path.resolve(process.cwd(), "tsconfig.json"),
+          reportFiles: ["src/sketch/**/*.ts"],
         },
       },
     ],
@@ -45,16 +46,14 @@ module.exports = function (config) {
     };
   }
   config.resolve.alias = {
-    '@/bridge': path.resolve(__dirname, './src/bridge'),
-    '@/common': path.resolve(__dirname, './src/common'),
-    '@': path.resolve(__dirname, './src/sketch'),
+    "@": path.resolve(__dirname, "./src"),
   };
 
-  config.resolve.extensions = [...config.resolve.extensions, '.ts', '.tsx'];
+  config.resolve.extensions = [...config.resolve.extensions, ".ts", ".tsx"];
 
   // transformations for production (publish)
   if (!isDev) {
-    config.mode = 'production';
+    config.mode = "production";
     config.plugins.push(
       new webpack.LoaderOptionsPlugin({
         minimize: true,
@@ -68,4 +67,9 @@ module.exports = function (config) {
       ],
     };
   }
+  // config.plugins.push(
+  //   new GenerateJsonPlugin("my-file.json", {
+  //     foo: "bar",
+  //   }),
+  // );
 };

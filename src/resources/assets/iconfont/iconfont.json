@@ -1,0 +1,128 @@
+{
+  "id": "2213096",
+  "name": "xscape",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "21574667",
+      "name": "filldown",
+      "font_class": "Filldown",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "21531893",
+      "name": "Sync",
+      "font_class": "Sync",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "21531894",
+      "name": "Besom",
+      "font_class": "Besom",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "21531896",
+      "name": "Close",
+      "font_class": "Close",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "21531897",
+      "name": "File",
+      "font_class": "File",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "18349812",
+      "name": "Document",
+      "font_class": "Document",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "18349813",
+      "name": "Image",
+      "font_class": "Image",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "18349814",
+      "name": "Artboard",
+      "font_class": "Artboard",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    },
+    {
+      "icon_id": "18349815",
+      "name": "Group",
+      "font_class": "Group",
+      "unicode": "e6ec",
+      "unicode_decimal": 59116
+    },
+    {
+      "icon_id": "18349816",
+      "name": "Size",
+      "font_class": "Size",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "18349817",
+      "name": "Preview",
+      "font_class": "Preview",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "18349818",
+      "name": "Style",
+      "font_class": "Style",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "18349819",
+      "name": "Symbol",
+      "font_class": "Symbol",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "18349820",
+      "name": "Select",
+      "font_class": "Select",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "18349821",
+      "name": "Text",
+      "font_class": "Text",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "18349822",
+      "name": "Position",
+      "font_class": "Position",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "18349823",
+      "name": "Layer",
+      "font_class": "Layer",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    }
+  ]
+}

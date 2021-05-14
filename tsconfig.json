@@ -1,4 +1,6 @@
 {
+  "include": ["src", "./typings", "r2u-components"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
@@ -17,18 +19,10 @@
     "esModuleInterop": true,
     "lib": ["dom", "es2015", "es2016", "es2017"],
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "sketch-types",
-      "sketch-internal-types",
-      "cocoascript-types",
-      "node"
-    ],
     "baseUrl": ".",
     "paths": {
-      "@/common": ["./src/common"],
-      "@/common/*": ["./src/common/*"],
-      "@/bridge/*": ["./src/bridge/*"],
-      "@/bridge": ["./src/bridge"]
+      "typings/*": ["typings/*"],
+      "@/*": ["src/*"]
     }
   }
 }

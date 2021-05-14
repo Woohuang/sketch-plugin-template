@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2213096 */
+  src: url('iconfont.woff2?t=1620883419948') format('woff2'),
+       url('iconfont.woff?t=1620883419948') format('woff'),
+       url('iconfont.ttf?t=1620883419948') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconFilldown:before {
+  content: "\e6f7";
+}
+
+.iconSync:before {
+  content: "\e6f5";
+}
+
+.iconBesom:before {
+  content: "\e6f6";
+}
+
+.iconClose:before {
+  content: "\e6f8";
+}
+
+.iconFile:before {
+  content: "\e6f9";
+}
+
+.iconDocument:before {
+  content: "\e6e9";
+}
+
+.iconImage:before {
+  content: "\e6ea";
+}
+
+.iconArtboard:before {
+  content: "\e6eb";
+}
+
+.iconGroup:before {
+  content: "\e6ec";
+}
+
+.iconSize:before {
+  content: "\e6ed";
+}
+
+.iconPreview:before {
+  content: "\e6ee";
+}
+
+.iconStyle:before {
+  content: "\e6ef";
+}
+
+.iconSymbol:before {
+  content: "\e6f0";
+}
+
+.iconSelect:before {
+  content: "\e6f1";
+}
+
+.iconText:before {
+  content: "\e6f2";
+}
+
+.iconPosition:before {
+  content: "\e6f3";
+}
+
+.iconLayer:before {
+  content: "\e6f4";
+}
+
